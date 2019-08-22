@@ -1,0 +1,9 @@
+<p>{{ questions[qIdx].q }}</p>
+<form (submit)="isCorrect(qIdx, answer)">
+    <input type="text" name="answer" [(ngModel)]="answer">
+    <button type="submit">Mine</button>
+    <div *ngIf="message">
+        <p [class]="message.class">{{message.text}}<span *ngIf="message.class=='text-success'" class="currency">SC</span></p>
+    </div>
+    
+</form>

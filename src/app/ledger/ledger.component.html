@@ -1,0 +1,18 @@
+<table class="table table-striped table-condensed">
+    <thead>
+        <tr>
+            <th>Action</th>
+            <th>Quantity</th>
+            <th>Exchange Rate</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let entry of ledger.reverse(); let i = index">
+            <td>{{entry.action}}</td>
+            <td>{{entry.quantity}}</td>
+            <td class="align-self-bottom">{{entry.rate}}</td>
+            <td><button [routerLink]="['/transaction/', i]">Details</button></td>
+        </tr>
+    </tbody>
+</table>

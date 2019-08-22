@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.coin {
+    background-image: url('./assets/img/shinto2.png');
+    background-color: orange;
+    height:35px;
+    width:35px;
+    background-size:70%;
+    background-repeat:no-repeat;
+    border-radius:50%;
+    background-position:center;
+}
+
+.currency {
+    font-size: 0.8rem;
+}
+
+.sc-info {
+    background-color:orange;
+    /* color:white; */
+}
+.sc-info > * {
+    padding:0 0.5rem;
+    margin:0;
+}

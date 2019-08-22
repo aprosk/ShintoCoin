@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import {ShintoService} from './shinto.service'
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'public';
+  shinto = this._shintoService.shinto;
+
+  constructor(private _shintoService: ShintoService) {
+
+  }
 }
